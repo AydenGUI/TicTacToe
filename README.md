@@ -3,10 +3,9 @@ TicTacToe is a command-line implementation of the classic TicTacToe game, writte
 
 # Usage
 To start the game, run ./tictactoe. The following options are available:
-
--i: Enables the computer player. If not specified, the game will be a two-player game.
--s size: Designates board size, which is 3 by default.
--h: Displays help information.
+* -i: Enables the computer player. If not specified, the game will be a two-player game.
+* -s size: Designates board size, which is 3 by default. Valid values are 3 to 9.
+* -h: Displays help information.
 # Gameplay
 The game is played on a square board of designated size, where players take turns marking a cell with their chosen symbol (usually X or O). The first player to get three of their symbols in a row, column, or diagonal wins the game.
 
