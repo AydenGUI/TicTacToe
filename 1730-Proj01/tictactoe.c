@@ -27,8 +27,8 @@ void printboard( char** Board, int size )
     	printf("%c|", 'a' + i);
     	for( int j = 0; j < size; ++j )
         {
-      		printf("%c|", Board[i][j]);
-    	}
+            printf("%c|", Board[i][j]);
+        }
     	printf("\n");
     }
 }
@@ -71,6 +71,10 @@ int main(int argc, char *argv[])
             break;
         case 's':
             size = atoi(optarg);
+            if (size > 10 || size < 3) {
+                fprintf(stderr, "Error: Accepted size range of [3, 10].\n");
+                return 0;
+            }
             break;
         case 'h':
             failed_Start = 1;
