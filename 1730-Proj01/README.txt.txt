@@ -1,1 +1,0 @@
-I only wrote code for tictactoe.c, we were supplied clearscreen.
